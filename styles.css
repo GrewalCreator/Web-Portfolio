@@ -7,13 +7,18 @@
     background-color: rgb(49, 47, 47);
 }
 
+body{
+    min-height: 100vh;
+    
+}
+
 .logo {
     width: 200px;
     height: auto;
 }
 
 ul, a, button{
-    font-family:"Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
@@ -62,8 +67,3 @@ button{
 button:hover{
     background-color: rgba(0, 136, 169, 0.8);
 }
-
-
-
-
-
