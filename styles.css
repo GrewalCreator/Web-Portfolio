@@ -11,6 +11,8 @@ body{
     
     max-width: 100%;
     overflow-x: hidden;
+
+    background-image: url('./images/marble.jpg');
 }
 
 *{
@@ -20,16 +22,21 @@ body{
 }
 
 .nav{
-    border-bottom: 1px solid #EAEAEB;
+    border-bottom: 1px solid rgba(17, 14, 17, 0.667);
     text-align: right;
     height: 70px;
     line-height: 70px;
 }
 
 a{
+    transition: ease 0.3s;
     text-decoration: none;
-    
     padding: 20px 5%;
+}
+
+a:hover{
+    color:black;
+    font-size: 120%;
 }
 
 label{
@@ -60,10 +67,6 @@ label{
     
 }
 
-.ctd{
-    display:none;
-}
-
 .intro{
     position: relative;
     left: 80px;
@@ -72,6 +75,21 @@ label{
 
 .intro p{
     max-width: 25pc;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background: linear-gradient(110deg, rgba(253, 205, 59, 1) 60%, rgba(255, 237, 75, 1) 60%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: "Montserrat", sans-serif;
+}
+
+button:hover {
+    background: linear-gradient(110deg, rgba(253, 205, 59, 0.7) 60%, rgba(255, 237, 75, 0.7) 60%);
 }
 
 
@@ -97,7 +115,6 @@ label{
 
     #toggle:checked + .menu{
         display:block;
-        background-color: black;
     }
 
  
