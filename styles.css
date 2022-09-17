@@ -8,10 +8,7 @@ html{
 body{
     font-family: "Montserrat", sans-serif;
     background: rgb(255, 255, 255);
-    
-    max-width: 100%;
     overflow-x: hidden;
-
     background-image: url('./images/marble.jpg');
 }
 
@@ -31,7 +28,7 @@ body{
 a{
     transition: ease 0.3s;
     text-decoration: none;
-    padding: 20px 5%;
+    padding: 10px 2%;
 }
 
 a:hover{
@@ -46,7 +43,10 @@ label{
     display: none;
     width: 26px;
     position: relative;
-    left: 10px;
+    left: -10px;
+    top: 25%;
+    float: right;
+    transition: all .5s ease-in-out;
 }
 
 #toggle{
@@ -54,27 +54,34 @@ label{
 }
 
 .menu{
-    
     margin: 0 30px 0 0;
 }
 
 
 .logo{
     cursor: pointer;
-    margin-right: auto;
-    width: 200px;
+    width: 250px;
     height: auto;
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
     
 }
 
-.intro{
+
+.intro {
     position: relative;
     left: 80px;
     margin: 10% 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .intro p{
     max-width: 25pc;
+}
+
+#self-portrait{
+    margin-top: -125px;
 }
 
 button {
@@ -96,7 +103,7 @@ button:hover {
 
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     label{
         display: block;
         cursor: pointer;
@@ -105,17 +112,34 @@ button:hover {
         text-align: center;
         width: 100%;
         display: none;
+
     }
 
     .menu a{
         display: block;
         border-bottom: 1px solid #EAEAEB;
 
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        
+
     }
 
     #toggle:checked + .menu{
         display:block;
+
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        z-index: 1;
+        
+
     }
 
- 
 }
